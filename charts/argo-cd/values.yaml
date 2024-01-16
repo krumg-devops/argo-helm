@@ -172,6 +172,9 @@ configs:
     ## Ref: https://argo-cd.readthedocs.io/en/latest/operator-manual/rbac/#exec-resource
     exec.enabled: false
 
+    # -- Which shells are allowed for `exec`, and in which order they are attempted 
+    exec.shells: "bash,sh,powershell,cmd"
+    
     # -- Enable local admin user
     ## Ref: https://argo-cd.readthedocs.io/en/latest/faq/#how-to-disable-admin-user
     admin.enabled: true
